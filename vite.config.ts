@@ -10,6 +10,8 @@ const projectRoot = process.env.PROJECT_ROOT || import.meta.dirname
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Base public path when served. Set to the GitHub Pages subpath for this repo.
+  base: '/MaStation/',
   plugins: [
     react(),
     tailwindcss(),
